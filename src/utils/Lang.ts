@@ -12,7 +12,8 @@ const DETECTION_OPTIONS = {
 const resources = {
   en: {
     translation: {
-      title: "Test title",
+      title: "Title",
+      test: "Test",
     },
   },
 };
