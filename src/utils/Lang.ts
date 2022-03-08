@@ -1,27 +1,26 @@
 /** traductions */
 
-const locales = {
-    fr: {
-        title: "Titre",
-    },
-    en: {
-        title: "Title",
-    }
-}
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
-const getLang = (languageCode: string) => {
-    switch (languageCode) {
-        case "fr":
-            return locales.fr;
-            break;
-        case "en":
-            return locales.en;
-            break;
-
-        default:
-            return locales.en;
-            break;
-    }
+const DETECTION_OPTIONS = {
+  order: ["localStorage", "navigator"],
+  caches: ["localStorage"],
 };
 
-export const Lang = getLang(RNLocalize.getLocales()[0].languageCode);
+const resources = {
+  en: {
+    translation: {
+      title: "Test title",
+    },
+  },
+};
+
+i18n.use(initReactI18next).use(LanguageDetector).init({
+  resources,
+  detection: DETECTION_OPTIONS,
+  fallbackLng: "en",
+});
+
+export default i18n;
