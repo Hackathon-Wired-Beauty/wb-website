@@ -5,6 +5,11 @@ import { useTranslation } from "react-i18next";
 interface TemplateProps {}
 
 export const TemplateScreen: React.FunctionComponent<null> = () => {
+  const { t } = useTranslation();
   React.useEffect(() => {}, []);
-  return <></>;
+  return (
+    <>
+      <p>{t("translation-key")}</p>
+    </>
+  );
 };
