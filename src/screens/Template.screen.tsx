@@ -9,7 +9,7 @@ export const TemplateScreen: React.FunctionComponent<TemplateProps> = () => {
   React.useEffect(() => {}, []);
   return (
     <>
-      <p>{t("translation-key")}</p>
+      <p>{t("title")}</p>
     </>
   );
 };
