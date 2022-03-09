@@ -90,7 +90,7 @@ export const WhatWeDoScreen: React.FunctionComponent<WhatWeDoProps> = () => {
           uppercase
           align="center"
         >
-          {"BeautyTech X Skincare"}
+          {"BeautyTech ✖ Skincare"}
         </Text>
         <Text
           size="18px"

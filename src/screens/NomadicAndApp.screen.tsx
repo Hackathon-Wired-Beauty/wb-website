@@ -289,7 +289,7 @@ export const NomadicAndAppScreen: React.FunctionComponent<
               align="center"
               uppercase
             >
-              SMART DATA X SKINCARE
+              SMART DATA ✖ SKINCARE
             </Text>
             <Text
               size="15px"
