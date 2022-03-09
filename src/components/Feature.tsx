@@ -49,7 +49,7 @@ export const Feature: React.FC<FeatureProps> = ({
                 <Avatar
                   alt="Remy Sharp"
                   src={image}
-                  sx={{ width: 150, height: 150, marginLeft: "30%" }}
+                  sx={{ width: 150, height: 150, marginLeft: "35%" }}
                 />
               </Grid>  
               <Grid>
@@ -60,7 +60,7 @@ export const Feature: React.FC<FeatureProps> = ({
                   weigth="bold"
                   uppercase
                   style={{ 
-                    marginTop: "10px", wordWrap: "break-word",
+                    marginTop: "10px",
                   }}
                   align={"center"}
                 >
@@ -122,7 +122,7 @@ export const Feature: React.FC<FeatureProps> = ({
                 <Avatar
                   alt="Remy Sharp"
                   src={image}
-                  sx={{ width: 150, height: 150, marginRight: "30%" }}
+                  sx={{ width: 150, height: 150, marginRight: "35%" }}
                 />
               </Grid>
               <Grid>
@@ -130,10 +130,10 @@ export const Feature: React.FC<FeatureProps> = ({
                   color={Colors.light.texts}
                   size="48px"
                   component={"p"}
-                  weigth="600"
+                  weigth="bold"
                   uppercase
                   style={{ 
-                    marginTop: "10px", wordWrap: "break-word",
+                    marginTop: "10px"
                   }}
                   align="center"
                 >
