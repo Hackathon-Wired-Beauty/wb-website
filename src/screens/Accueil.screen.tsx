@@ -30,7 +30,6 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
   const [companyName, setCompanyName] = React.useState("");
   const [whoAreYou, setWhoAreYou] = React.useState("0");
   const [message, setMessage] = React.useState("");
-  const [isHover, SetIsHover] = React.useState(false);
 
   React.useEffect(() => {}, []);
   return (
@@ -233,8 +232,6 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
           item xs={6}
         >
           <Grid
-            onMouseEnter={() => SetIsHover(true)}
-            onMouseLeave={() => SetIsHover(false)}
           >
             <Text
               color={Colors.light.texts}
@@ -243,16 +240,14 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
               align="center"
               component={"h2"}
               size="40px"
-              style={{ 
+            >
+              <span style={{ 
                 marginTop: "10px", wordWrap: "break-word",
                 backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
-                backgroundSize: `${isHover ? "18.5rem 1rem, 100% 0.1rem" : "18.5rem 0.5rem, 100% 0.1rem"}` ,
+                backgroundSize: "17.5rem 1rem, 100% 0.1rem",
                 backgroundRepeat: "no-repeat",
-                backgroundPositionX: "calc(24rem), 0%",
-                backgroundPositionY: "75%",
-              }}
-            >
-              Contact us
+                backgroundPositionY: "90%",
+              }}>Contact us</span>
             </Text>
             </Grid>
           <div style={{ marginBottom: "25px" }}></div>
