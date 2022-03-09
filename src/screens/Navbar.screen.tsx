@@ -11,7 +11,7 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
     /**traduction*/
     const { t } = useTranslation();
     return (
-        <>
+        <div>
             <ContainerDiv>
                 <Logo src={logo}/>
                 <Wrapper flexDirection="row" alignItems="center">
@@ -65,18 +65,7 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
                         </StyledLink>
                 </Wrapper>
             </ContainerDiv>
-
-          <ContainerDivVertical>
-              <Wrapper flexDirection="column" alignItems="start">
-                  <StyledLink to={"/accueil"}>
-                        <LogoSideBar src={logo}/>
-                  </StyledLink>
-                  <StyledLink to={"/accueil"}>
-                       <LogoSideBar src={logo}/>
-                  </StyledLink>
-              </Wrapper>
-          </ContainerDivVertical>
-        </>
+        </div>
     )
 };
 

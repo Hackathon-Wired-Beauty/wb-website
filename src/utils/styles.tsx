@@ -17,7 +17,7 @@ export const Text = styled(NavText)`
 
 export const Wrapper = styled(NavItemWrapper)`
     display: flex;
-    flex-direction: ${(props)=>props.flexDirection ?  props.flexDirection  : "column"};
+    flex-direction: ${(props)=>props.flexDirection ?  props.flexDirection  : "row"};
     align-items:  ${(props)=>props.alignItems ? props.alignItems  : "flex-start"};
     padding: .1em;
     cursor:pointer;
@@ -31,19 +31,34 @@ export const ContainerDiv = styled.div`
     justify-content:space-evenly;
     align-items: center;
     color: white;
-    background-color: FCFCFC;
+    background-color: #FCFCFC;
+    position: fixed;
+    width: 100%;
+    Z-INDEX: 1000;
+    top: 0;
 `;
 
 /**navbar vertical*/
 export const ContainerDivVertical = styled.div`
-    display: flex-row;
-    width: 5%;
+    width: 80px;
     height: 100%;
+    margin-top:60px;
     position: fixed;
+    display: flex;
     justify-content:space-evenly;
     align-items: center;
-    color: white;
-    background-color: white;
+    background-color: #FFB673;
+    position: fixed;
+    Z-INDEX: 1000;
+    top: 0;
+`;
+export const WrapperSideBar = styled(NavItemWrapper)`
+    display: flex;
+    flex-direction: ${(props)=>props.flexDirection ?  props.flexDirection  : "row"};
+    align-items:  ${(props)=>props.alignItems ? props.alignItems  : "flex-start"};
+    height:100%;
+    justify-content: space-evenly;
+    cursor:pointer;
 `;
 
 /** logo*/

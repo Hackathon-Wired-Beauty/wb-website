@@ -6,7 +6,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: black;
     &:focus, &:hover{
-        color:#FFB673;
+        color:white;
     }, &:visited, &:link, &:active {
         text-decoration: none;
     }
