@@ -2,22 +2,10 @@ import * as React from "react";
 import "../App.css";
 
 import { useTranslation } from "react-i18next";
-import { Container } from "../components/Container";
-import { VideoBg } from "../components/Video";
 import { Text } from "../components/Text";
 import { Colors } from "../utils/Colors";
-import { ScreenFilter } from "../components/ScreenFilter";
-import { Feature } from "../components/Feature";
 import Grid from "@mui/material/Grid/Grid";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import TextField from "@mui/material/TextField";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import Button from "@mui/material/Button";
-import MouseRounded from "@mui/icons-material/MouseRounded";
 import { MouseScroll } from "../components/MouseScoll";
 import Card from "@mui/material/Card";
 
