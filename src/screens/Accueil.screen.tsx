@@ -19,6 +19,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
+import { Typography } from "@mui/material";
 
 interface AccueilProps {}
 
@@ -123,17 +124,30 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
         style={{
           backgroundColor: Colors.dark.background,
           height: "350px",
+          display: "flex",
+          justifyContent: "center"
         }}
       >
         <div style={{ marginTop: "25px" }}></div>
-        <Grid container alignItems={"center"} justifyContent={"center"} xs={3}>
-          <img
-            src="https://i.imgur.com/JWXZ65G.png"
-            height={"50px"}
-            style={{ objectFit: "contain" }}
-          />
-        </Grid>
         <Grid
+          xs={12}
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Text
+            color={Colors.dark.texts}
+            uppercase
+            size="48px"
+            component={"h2"}
+            weigth="bold"
+            align="center"
+          >
+            {"They trust us"}
+          </Text>
+        </Grid>
+        {/* <Grid
           xs={6}
           container
           direction="column"
@@ -143,9 +157,9 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
           <Text
             color={Colors.dark.texts}
             uppercase
-            size="24px"
+            size="48px"
             component={"h2"}
-            weigth="700"
+            weigth="bold"
             align="center"
           >
             {"They trust us"}
@@ -187,6 +201,20 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
               />
             </div>
           </Carousel>
+        </Grid> */}
+        <Grid container alignItems={"center"} justifyContent={"center"} xs={3}>
+          <img
+            src="https://i.imgur.com/JWXZ65G.png"
+            height={"50px"}
+            style={{ objectFit: "contain" }}
+          />
+        </Grid>
+        <Grid container alignItems={"center"} justifyContent={"center"} xs={3}>
+          <img
+            src="https://i.imgur.com/c8ffCXb.png"
+            height={"50px"}
+            style={{ objectFit: "contain" }}
+          />
         </Grid>
         <Grid container alignItems={"center"} justifyContent={"center"} xs={3}>
           <img
@@ -208,17 +236,28 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
         }}
       >
         <Grid item xs={3}></Grid>
-        <Grid item xs={6}>
-          <Text
-            color={Colors.light.texts}
-            weigth={"900"}
-            uppercase
-            align="center"
-            component={"h2"}
-            size="40px"
+        <Grid 
+          item xs={6}
+        >
+          <Grid
           >
-            Contact us
-          </Text>
+            <Text
+              color={Colors.light.texts}
+              weigth={"900"}
+              uppercase
+              align="center"
+              component={"h2"}
+              size="40px"
+            >
+              <span style={{ 
+                marginTop: "10px", wordWrap: "break-word",
+                backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+                backgroundSize: "17.5rem 1rem, 100% 0.1rem",
+                backgroundRepeat: "no-repeat",
+                backgroundPositionY: "90%",
+              }}>Contact us</span>
+            </Text>
+            </Grid>
           <div style={{ marginBottom: "25px" }}></div>
           <Grid container>
             <Grid item xs={5}>
@@ -290,8 +329,15 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
           <Grid container>
             <Grid item xs={4}></Grid>
             <Grid item xs={4}>
-              <Button variant="contained" centerRipple fullWidth>
-                Send message
+              <Button variant="contained" size="large" centerRipple fullWidth>
+                <Text
+                  color={Colors.dark.texts}
+                  weigth={"normal"}
+                  uppercase
+                  align="center"
+                  component={"h2"}
+                  size="18px"
+                >Send message</Text>
               </Button>
             </Grid>
             <Grid item xs={4}></Grid>

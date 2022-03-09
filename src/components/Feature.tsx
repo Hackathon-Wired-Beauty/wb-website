@@ -41,28 +41,27 @@ export const Feature: React.FC<FeatureProps> = ({
             marginBottom: spacing ?? 0,
           }}
         >
-          <Grid item xs={2}>
-            <Grid
-              container
-              direction={"column"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
+          <Grid
+            item xs={4}
+          >
+            <Grid>
               <Grid>
                 <Avatar
                   alt="Remy Sharp"
                   src={image}
-                  sx={{ width: 100, height: 100 }}
+                  sx={{ width: 150, height: 150, marginLeft: "35%" }}
                 />
-              </Grid>
+              </Grid>  
               <Grid>
                 <Text
                   color={Colors.light.texts}
-                  size="20px"
+                  size="48px"
                   component={"p"}
-                  weigth="600"
+                  weigth="bold"
                   uppercase
-                  style={{ marginTop: "10px" }}
+                  style={{ 
+                    marginTop: "10px",
+                  }}
                   align={"center"}
                 >
                   {title}
@@ -70,18 +69,20 @@ export const Feature: React.FC<FeatureProps> = ({
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={10} textAlign={"center"}>
+          
+          <Grid item xs={8}>
             <Text
               color={Colors.light.texts}
-              size="18px"
+              size="24px"
               component={"p"}
               weigth="200"
               align="right"
+              style={{ marginLeft: "130px"}}
             >
               {children}
             </Text>
           </Grid>
-        </Grid>
+        </Grid> 
       )}
 
       {imagePosition === "right" && (
@@ -97,18 +98,20 @@ export const Feature: React.FC<FeatureProps> = ({
             marginBottom: spacing ?? 0,
           }}
         >
-          <Grid item xs={10} textAlign={"center"}>
+          <Grid item xs={8}>
             <Text
               color={Colors.light.texts}
-              size="18px"
+              size="24px"
               component={"p"}
               weigth="200"
               align="left"
+              style={{ marginRight: "130px"}}
             >
               {children}
             </Text>
           </Grid>
-          <Grid item xs={2}>
+          <Grid
+            item xs={4}>
             <Grid
               container
               direction={"column"}
@@ -119,17 +122,19 @@ export const Feature: React.FC<FeatureProps> = ({
                 <Avatar
                   alt="Remy Sharp"
                   src={image}
-                  sx={{ width: 100, height: 100 }}
+                  sx={{ width: 150, height: 150, marginRight: "35%" }}
                 />
               </Grid>
               <Grid>
                 <Text
                   color={Colors.light.texts}
-                  size="20px"
+                  size="48px"
                   component={"p"}
-                  weigth="600"
+                  weigth="bold"
                   uppercase
-                  style={{ marginTop: "10px" }}
+                  style={{ 
+                    marginTop: "10px"
+                  }}
                   align="center"
                 >
                   {title}

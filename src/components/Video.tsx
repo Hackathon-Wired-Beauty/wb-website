@@ -10,4 +10,5 @@ export const VideoBg = styled.video`
   object-fit: cover;
   background: ${Colors.dark.background};
   z-index: 0;
+  top: 0px;
 `;

@@ -5,6 +5,10 @@ import StyledLink from "../components/StyledLink";
 /**styles and components*/
 import {ContainerDiv, ContainerDivVertical,Text, LogoSideBar, Wrapper, Logo, NavbarButton} from "../utils/styles";
 import logo from "../assets/images/Logo_Wired_BeautyFULL_BLACK.png";
+/**routes*/
+import { WhatWeDoScreen } from "./WhatWeDo.screen";
+import {AccueilScreen} from "./Accueil.screen";
+
 interface NavbarProps {}
 
 export const NavbarScreen:React.FC = (NavbarProps) => {
@@ -16,14 +20,14 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
                 <Logo src={logo}/>
                 <Wrapper flexDirection="row" alignItems="center">
                     <Wrapper >
-                        <StyledLink to="/accueil">
+                        <StyledLink to="/">
                             <Text >{t("Homepage")}</Text>
                         </StyledLink>
                     </Wrapper>
                 </Wrapper>
 
                 <Wrapper>
-                    <StyledLink to={"/accueil"}>
+                    <StyledLink to={"/what-we-do"}>
                         <Text >{t("What we do")}</Text>
                     </StyledLink>
                 </Wrapper>

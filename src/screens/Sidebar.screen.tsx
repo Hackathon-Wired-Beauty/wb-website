@@ -14,29 +14,47 @@ export const SidebarScreen:React.FC = (SidebarProps) => {
         <div>
             <ContainerDivVertical>
                 <WrapperSideBar flexDirection="column" alignItems="center">
+                        <StyledLink to={"/"}>
+                            <Text fontSize={"10px"}>
+                                <Home/>
+                                <p style={{ marginTop:"2px"}}>
+                                    Home</p>
+                            </Text>
+                        </StyledLink>
 
-                        <StyledLink to={"/accueil"}>
-                            <Text fontSize={"10px"}>Home <Home/></Text>
+                        <StyledLink to={"/what-we-do"}>
+                            <Text fontSize={"10px"}>
+                                <Work/>
+                                <p>Work</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Text fontSize={"10px"}>Work <Work/></Text>
+                            <Text fontSize={"10px"}>
+                                <AppShortcut/>
+                                <p>App</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Text fontSize={"10px"}>App <AppShortcut/></Text>
+                            <Text fontSize={"10px"}>
+                                <Groups/>
+                                <p>Groups</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Text fontSize={"10px"}>Groups <Groups/></Text>
+                            <Text fontSize={"10px"}>
+                                <Book/>
+                                <p>Rapport</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Text fontSize={"10px"}>Rapport <Book/></Text>
-                        </StyledLink>
-
-                        <StyledLink to={"/accueil"}>
-                            <Text fontSize={"10px"}>Studies <Devices/></Text>
+                            <Text fontSize={"10px"}>
+                                <Devices/>
+                                <p>Studies</p>
+                                </Text>
                         </StyledLink>
 
                 </WrapperSideBar>
