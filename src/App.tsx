@@ -11,10 +11,8 @@ function App() {
     <div className="App">
         <NavbarScreen/>
       <header className="App-header">
-
         <TemplateScreen />
       </header>
-
     </div>
   );
 }
