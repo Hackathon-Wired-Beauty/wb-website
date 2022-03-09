@@ -16,27 +16,27 @@ export const SidebarScreen:React.FC = (SidebarProps) => {
                 <WrapperSideBar flexDirection="column" alignItems="center">
 
                         <StyledLink to={"/accueil"}>
-                            <Home/>
+                            <Text fontSize={"10px"}>Home <Home/></Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Work/>
+                            <Text fontSize={"10px"}>Work <Work/></Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <AppShortcut/>
+                            <Text fontSize={"10px"}>App <AppShortcut/></Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Groups/>
+                            <Text fontSize={"10px"}>Groups <Groups/></Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Book/>
+                            <Text fontSize={"10px"}>Rapport <Book/></Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Devices/>
+                            <Text fontSize={"10px"}>Studies <Devices/></Text>
                         </StyledLink>
 
                 </WrapperSideBar>

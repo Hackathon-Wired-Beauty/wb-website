@@ -47,7 +47,7 @@ export const ContainerDivVertical = styled.div`
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    background-color: #FFB673;
+    background-color: #FCFCFC;
     position: fixed;
     Z-INDEX: 1000;
     top: 0;
