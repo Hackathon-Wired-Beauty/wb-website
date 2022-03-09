@@ -28,7 +28,7 @@ interface TextProps {
   size: string;
   weigth?: string;
   uppercase?: boolean;
-  align: "left" | "right" | "center";
+  align: "left" | "right" | "center" | "justify";
 }
 
 export const Text = ({
