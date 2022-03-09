@@ -10,10 +10,18 @@ const DETECTION_OPTIONS = {
 };
 
 const resources = {
+  "fr-FR": {
+    translation: {
+      title: "Title",
+      test: "Test i18n",
+      brandTrust: "They trus us",
+    },
+  },
   en: {
     translation: {
       title: "Title",
-      test: "Test",
+      test: "Test i18n",
+      brandTrust: "They trus us",
     },
   },
 };
