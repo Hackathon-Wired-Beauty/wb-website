@@ -42,7 +42,7 @@ export const WhatWeDoScreen: React.FunctionComponent<WhatWeDoProps> = () => {
         }}
       >
         <img
-          src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+          src="https://i.imgur.com/WqpXWSR.jpg"
           style={{
             width: "100%",
             height: "75vh",
@@ -282,7 +282,7 @@ export const WhatWeDoScreen: React.FunctionComponent<WhatWeDoProps> = () => {
           <Grid container>
             <Grid item xs={4}>
               <img
-                src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80"
+                src="https://i.imgur.com/fdPTkhW.jpg"
                 alt="img"
                 style={{
                   width: "100%",
