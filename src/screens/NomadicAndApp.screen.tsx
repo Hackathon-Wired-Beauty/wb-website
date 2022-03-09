@@ -324,7 +324,13 @@ export const NomadicAndAppScreen: React.FunctionComponent<
       {/*  END SMART DATA X SKINCARE */}
 
       {/*  OUR INSANELY FAST ALGORITHM */}
-      <Grid container direction={"column"}>
+      <Grid
+        container
+        direction={"column"}
+        style={{
+          marginTop: "-4px",
+        }}
+      >
         <Grid container>
           <Grid
             container
@@ -334,14 +340,14 @@ export const NomadicAndAppScreen: React.FunctionComponent<
             direction={"column"}
             style={{
               height: "350px",
-              backgroundColor: Colors.dark.background,
+              backgroundColor: Colors.light.background,
               paddingLeft: "10%",
               paddingRight: "10%",
             }}
           >
             <Text
               size="24px"
-              color={Colors.dark.texts}
+              color={Colors.light.texts}
               component="p"
               data-aos="fade-up"
               weigth="900"
@@ -352,7 +358,7 @@ export const NomadicAndAppScreen: React.FunctionComponent<
             </Text>
             <Text
               size="15px"
-              color={Colors.dark.texts}
+              color={Colors.light.texts}
               component="p"
               data-aos="fade-up"
               weigth="800"
@@ -365,22 +371,22 @@ export const NomadicAndAppScreen: React.FunctionComponent<
             </Text>
             <Text
               size="15px"
-              color={Colors.dark.texts}
+              color={Colors.light.texts}
               component="p"
               data-aos="fade-up"
               weigth="800"
               align="justify"
             >
-              Our scientific partners ( APHP and CRO : lien en page scientific )
-              have established that our measurement of TEWL is statistically
-              correlated to that of chromatography which is the reference
-              methodology as opposed to corneometry. Our technology is
-              complementary to imagery.
+              We're providing our mobile app with user feedback, our portable
+              lab device Lab-Grade testing, some single-use patches and our IOT
+              platform base in European Datacenter for European users and for
+              our Chinese users, we're collecting anonymously data in Datacenter
+              base in this said country.
             </Text>
           </Grid>
           <Grid item xs={4}>
             <img
-              src="https://images.unsplash.com/photo-1503149779833-1de50ebe5f8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
+              src="https://i.imgur.com/bGAWaTz.jpg"
               alt="img"
               style={{
                 width: "100%",
