@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TestScreen } from "./screens/Test.screen";
 import { AccueilScreen } from "./screens/Accueil.screen";
+import {ScientificValidScreen} from "./screens/ScientificValid.screen";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path={"/"} element={<AccueilScreen />} />
         <Route path={"/test"} element={<TestScreen />} />
+          <Route path={"/scientific-validation"} element={<ScientificValidScreen />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
