@@ -56,7 +56,7 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
                 </Wrapper>
 
                 <Wrapper flexDirection="row" alignItems="center">
-                    <StyledLink to={"/"}>
+                    <StyledLink to={"/range-of-service"}>
                         <Text>{t("Studies and Devices")}</Text>
                     </StyledLink>
                 </Wrapper>

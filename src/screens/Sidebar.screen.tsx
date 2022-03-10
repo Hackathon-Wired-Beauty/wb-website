@@ -54,7 +54,7 @@ export const SidebarScreen:React.FC = (SidebarProps) => {
                             </Text>
                         </StyledLink>
 
-                        <StyledLink to={"/"}>
+                        <StyledLink to={"/range-of-service"}>
                             <Text fontSize={"10px"}>
                                 <Devices/>
                                 <p>Studies</p>

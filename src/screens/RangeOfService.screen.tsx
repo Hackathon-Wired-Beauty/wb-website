@@ -15,6 +15,8 @@ import ScienceIcon from '@mui/icons-material/Science';
 import HealingIcon from '@mui/icons-material/Healing';
 import MultilineChartIcon from '@mui/icons-material/MultilineChart';
 import CompareIcon from '@mui/icons-material/Compare';
+import {NavbarScreen} from "./Navbar.screen";
+import {SidebarScreen} from "./Sidebar.screen";
 
 interface RangeOfServiceProps {}
 
@@ -24,6 +26,14 @@ export const RangeOfServiceScreen: React.FunctionComponent<RangeOfServiceProps> 
   React.useEffect(() => {}, []);
   return (
     <div>
+        <div>
+            <NavbarScreen/>
+            <SidebarScreen/>
+        </div>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
       <div
         style={{
           height: "75vh",
