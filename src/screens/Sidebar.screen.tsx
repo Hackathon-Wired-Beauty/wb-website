@@ -12,6 +12,10 @@ export const SidebarScreen:React.FC = (SidebarProps) => {
     const { t } = useTranslation();
     return (
         <div>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                rel="stylesheet"
+            />
             <ContainerDivVertical>
                 <WrapperSideBar flexDirection="column" alignItems="center">
                         <StyledLink to={"/"}>
@@ -29,28 +33,28 @@ export const SidebarScreen:React.FC = (SidebarProps) => {
                             </Text>
                         </StyledLink>
 
-                        <StyledLink to={"/accueil"}>
+                        <StyledLink to={"/nomadic-labgrade-device-and-app"}>
                             <Text fontSize={"10px"}>
                                 <AppShortcut/>
                                 <p>App</p>
                             </Text>
                         </StyledLink>
 
-                        <StyledLink to={"/accueil"}>
+                        <StyledLink to={"/who-are-we"}>
                             <Text fontSize={"10px"}>
                                 <Groups/>
                                 <p>Groups</p>
                             </Text>
                         </StyledLink>
 
-                        <StyledLink to={"/accueil"}>
+                        <StyledLink to={"/scientific-validation"}>
                             <Text fontSize={"10px"}>
                                 <Book/>
                                 <p>Rapport</p>
                             </Text>
                         </StyledLink>
 
-                        <StyledLink to={"/accueil"}>
+                        <StyledLink to={"/"}>
                             <Text fontSize={"10px"}>
                                 <Devices/>
                                 <p>Studies</p>

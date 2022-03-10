@@ -19,12 +19,9 @@ ReactDOM.render(
         <Route path={"/"} element={<AccueilScreen />} />
         <Route path={"/what-we-do"} element={<WhatWeDoScreen />} />
         <Route path={"/who-are-we"} element={<WhoAreWeScreen />} />
-        <Route
-          path={"/nomadic-labgrade-device-and-app"}
-          element={<NomadicAndAppScreen />}
-        />
+        <Route path={"/nomadic-labgrade-device-and-app"} element={<NomadicAndAppScreen />} />
         <Route path={"/test"} element={<TestScreen />} />
-          <Route path={"/scientific-validation"} element={<ScientificValidScreen />} />
+        <Route path={"/scientific-validation"} element={<ScientificValidScreen />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

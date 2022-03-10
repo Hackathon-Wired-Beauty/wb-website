@@ -9,7 +9,6 @@ import{NavButton as NavButtonItem} from "../components/NavButton";
 export const Text = styled(NavText)`
     color:${(props)=>props.color ? props.color :"#161616" };
     font-size: ${(props)=>props.fontSize ? props.fontSize  : ".9em"}; 
-    font-family: "Neue Montreal Medium";
         &:hover{
         color: ${(props)=>props.color ? props.color :"#FFB673" };
     }  

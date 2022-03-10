@@ -15,7 +15,12 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
     /**traduction*/
     const { t } = useTranslation();
     return (
+
         <div>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                rel="stylesheet"
+            />
             <ContainerDiv>
                 <Logo src={logo}/>
                 <Wrapper flexDirection="row" alignItems="center">
@@ -33,36 +38,36 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
                 </Wrapper>
 
                 <Wrapper>
-                    <StyledLink to={"/accueil"}>
+                    <StyledLink to={"/nomadic-labgrade-device-and-app"}>
                         <Text >{t("New nomadic labgrade App")}</Text>
                     </StyledLink>
                 </Wrapper>
 
                 <Wrapper flexDirection="row" alignItems="center">
-                    <StyledLink to={"/accueil"}>
+                    <StyledLink to={"/who-are-we"}>
                         <Text>{t("About us")}</Text>
                     </StyledLink>
                 </Wrapper>
 
                 <Wrapper flexDirection="row" alignItems="center">
-                    <StyledLink to={"/accueil"}>
+                    <StyledLink to={"/scientific-validation"}>
                         <Text>{t("Scientific validation")}</Text>
                     </StyledLink>
                 </Wrapper>
 
                 <Wrapper flexDirection="row" alignItems="center">
-                    <StyledLink to={"/accueil"}>
+                    <StyledLink to={"/"}>
                         <Text>{t("Studies and Devices")}</Text>
                     </StyledLink>
                 </Wrapper>
 
                 <Wrapper flexDirection="column" alignItems="center">
-                        <StyledLink to={"/accueil"}>
+                        <StyledLink to={"/"}>
                             <NavbarButton>
                                 <Text color={"black"}>{t("Sign In")}</Text>
                             </NavbarButton>
                         </StyledLink>
-                        <StyledLink to={"/accueil"}>
+                        <StyledLink to={"/"}>
                             <NavbarButton >
                                 <Text color={"black"}>{t("Being Panaliste")}</Text>
                             </NavbarButton>
