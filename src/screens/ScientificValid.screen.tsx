@@ -53,56 +53,21 @@ export const ScientificValidScreen: React.FunctionComponent<ScientificValidProps
                 </div>
 
                 <div style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-around", height:"100%"}}>
-                    <Card sx={{ maxWidth: 400 }}>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image={imageSc1}
-                                alt="scientific1"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h6" component="div" style={{fontFamily:"Neue Montreal Medium"}}>
-                                    What is oxidative stress ?
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary" style={{fontFamily:"Neue Montreal Medium"}}>
-                                    Oxidative stress is a rupture of cellular balance,
-                                    producing a build-up of free radicals responsible for skin premature ageing.
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                <Text> learn more onoxidative stress: paper by Dr </Text>
-                            </Button>
-                        </CardActions>
-                    </Card>
 
-                    <Card sx={{ maxWidth: 400 }}>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image={imageSc3}
-                                alt="scientific3"
-                            />
+                    <div style={{marginTop:"100px", alignItems:"center", top:"50px"}}>
+                        <Card sx={{ minWidth: 275, Height: 50}}>
                             <CardContent>
-                                <Typography variant="body2" color="text.secondary" style={{fontFamily:"Neue Montreal Medium"}}>
-                                    WHAT ARE FREE RADICALS? <br />
-                                    WHAT ARE SIGNS OF ANTIOXIDATIVE STRESS ON SKIN?
-                                    Pollution, Sun radation,…
+                                <Typography style={{fontFamily:"Neue Montreal Medium"}} sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                    YOU HAVE PUBLISHED RESEARCH ON THESE TOPICS?
+                                    PLEASE SUBMIT YOUR WORK AND CONTRIBUTE TO THE COMMUNITY
                                 </Typography>
                             </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                <Text> learn more free radicals?: paper by Dr </Text>
-                            </Button>
-                            <Button size="small" color="primary">
-                                <Text> learn more onoxidative signs: paper by Dr </Text>
-                            </Button>
-                        </CardActions>
-                    </Card>
+                            <CardActions>
+                                <Button size="small"><Text> DOWNLOAD HERE </Text></Button>
+                            </CardActions>
+                        </Card>
+                    </div>
+
 
                     <Card sx={{ maxWidth: 400 }}>
                         <CardActionArea>
@@ -130,19 +95,7 @@ export const ScientificValidScreen: React.FunctionComponent<ScientificValidProps
                     </Card>
                 </div>
 
-                <div style={{marginTop:"10px", alignItems:"center", top:"50px"}}>
-                    <Card sx={{ minWidth: 275, Height: 50}}>
-                        <CardContent>
-                            <Typography style={{fontFamily:"Neue Montreal Medium"}} sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                YOU HAVE PUBLISHED RESEARCH ON THESE TOPICS?
-                                PLEASE SUBMIT YOUR WORK AND CONTRIBUTE TO THE COMMUNITY
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small"><Text> DOWNLOAD HERE </Text></Button>
-                        </CardActions>
-                    </Card>
-                </div>
+
 
             </div>
 
