@@ -14,29 +14,47 @@ export const SidebarScreen:React.FC = (SidebarProps) => {
         <div>
             <ContainerDivVertical>
                 <WrapperSideBar flexDirection="column" alignItems="center">
+                        <StyledLink to={"/"}>
+                            <Text fontSize={"10px"}>
+                                <Home/>
+                                <p style={{ marginTop:"2px"}}>
+                                    Home</p>
+                            </Text>
+                        </StyledLink>
 
-                        <StyledLink to={"/accueil"}>
-                            <Home/>
+                        <StyledLink to={"/what-we-do"}>
+                            <Text fontSize={"10px"}>
+                                <Work/>
+                                <p>Work</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Work/>
+                            <Text fontSize={"10px"}>
+                                <AppShortcut/>
+                                <p>App</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <AppShortcut/>
+                            <Text fontSize={"10px"}>
+                                <Groups/>
+                                <p>Groups</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Groups/>
+                            <Text fontSize={"10px"}>
+                                <Book/>
+                                <p>Rapport</p>
+                            </Text>
                         </StyledLink>
 
                         <StyledLink to={"/accueil"}>
-                            <Book/>
-                        </StyledLink>
-
-                        <StyledLink to={"/accueil"}>
-                            <Devices/>
+                            <Text fontSize={"10px"}>
+                                <Devices/>
+                                <p>Studies</p>
+                                </Text>
                         </StyledLink>
 
                 </WrapperSideBar>
