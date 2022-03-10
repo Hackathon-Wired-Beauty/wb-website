@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import { WhatWeDoScreen } from "./screens/WhatWeDo.screen";
 import { NomadicAndAppScreen } from "./screens/NomadicAndApp.screen";
 import { WhoAreWeScreen } from "./screens/WhoAreWe";
+import { LoginScreen } from "./screens/Login.screen";
 AOS.init();
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.render(
           path={"/nomadic-labgrade-device-and-app"}
           element={<NomadicAndAppScreen />}
         />
+        <Route path={"/login"} element={<LoginScreen />} />
         <Route path={"/test"} element={<TestScreen />} />
       </Routes>
     </BrowserRouter>
