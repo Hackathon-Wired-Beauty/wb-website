@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TestScreen } from "./screens/Test.screen";
 import { AccueilScreen } from "./screens/Accueil.screen";
+import {ScientificValidScreen} from "./screens/ScientificValid.screen";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { WhatWeDoScreen } from "./screens/WhatWeDo.screen";
@@ -19,12 +20,11 @@ ReactDOM.render(
         <Route path={"/"} element={<AccueilScreen />} />
         <Route path={"/what-we-do"} element={<WhatWeDoScreen />} />
         <Route path={"/who-are-we"} element={<WhoAreWeScreen />} />
+        <Route path={"/nomadic-labgrade-device-and-app"} element={<NomadicAndAppScreen />} />
         <Route path={"/range-of-service"} element={<RangeOfServiceScreen />} />
-        <Route
-          path={"/nomadic-labgrade-device-and-app"}
-          element={<NomadicAndAppScreen />}
-        />
+        <Route path={"/nomadic-labgrade-device-and-app"} element={<NomadicAndAppScreen />} />
         <Route path={"/test"} element={<TestScreen />} />
+        <Route path={"/scientific-validation"} element={<ScientificValidScreen />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

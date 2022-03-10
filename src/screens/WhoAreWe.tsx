@@ -1,6 +1,7 @@
 import * as React from "react";
 import "../App.css";
-
+import {NavbarScreen} from "./Navbar.screen";
+import {SidebarScreen} from "./Sidebar.screen";
 import { useTranslation } from "react-i18next";
 import { Text } from "../components/Text";
 import { MouseScroll } from "../components/MouseScoll";
@@ -22,6 +23,10 @@ export const WhoAreWeScreen: React.FunctionComponent<WhoAreWeProps> = () => {
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
       />
+        <div>
+            <NavbarScreen/>
+            <SidebarScreen/>
+        </div>
       <div
         style={{
           height: "80vh",

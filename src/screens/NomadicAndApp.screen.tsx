@@ -5,6 +5,8 @@ import { MouseScroll } from "../components/MouseScoll";
 import { Colors } from "../utils/Colors";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
+import {NavbarScreen} from "./Navbar.screen";
+import {SidebarScreen} from "./Sidebar.screen";
 
 interface NomadicAndAppProps {}
 
@@ -19,6 +21,10 @@ export const NomadicAndAppScreen: React.FunctionComponent<
         backgroundColor: Colors.light.background,
       }}
     >
+        <div>
+            <NavbarScreen/>
+            <SidebarScreen/>
+        </div>
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
