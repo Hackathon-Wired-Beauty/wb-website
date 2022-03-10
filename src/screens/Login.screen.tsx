@@ -5,6 +5,7 @@ import { Colors } from "../utils/Colors";
 import { Text } from "../components/Text";
 import { Button, Card, Grid, TextField } from "@mui/material";
 import { ErrorLoginResponse, login, LoginResponse } from "../api/login";
+import { Navigate } from "react-router-dom";
 
 interface LoginProps {}
 
@@ -14,6 +15,7 @@ export const LoginScreen: React.FunctionComponent<LoginProps> = () => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState("");
+  const [redirectTo, setRedirectTo] = React.useState("");
 
   const handleLogin = () => {
     (async () => {
@@ -25,6 +27,11 @@ export const LoginScreen: React.FunctionComponent<LoginProps> = () => {
         setError("");
         const success: LoginResponse = loginRes;
         localStorage.setItem("user", JSON.stringify(success));
+        if (success.role === "ADMIN") {
+          setRedirectTo("/admin");
+        } else {
+          setRedirectTo("/dashboard");
+        }
       }
 
       console.log(loginRes);
@@ -120,6 +127,7 @@ export const LoginScreen: React.FunctionComponent<LoginProps> = () => {
                 <Button variant="contained" onClick={() => handleLogin()}>
                   Login
                 </Button>
+                {redirectTo !== "" && <Navigate replace to={redirectTo} />}
               </Card>
             </Grid>
             <Grid item xs={4}></Grid>
