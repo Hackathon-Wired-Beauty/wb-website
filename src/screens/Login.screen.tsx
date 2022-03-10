@@ -25,7 +25,6 @@ export const LoginScreen: React.FunctionComponent<LoginProps> = () => {
         setError("");
         const success: LoginResponse = loginRes;
         localStorage.setItem("user", JSON.stringify(success));
-        //await localStorage.store("user", JSON.stringify(success));
       }
 
       console.log(loginRes);
