@@ -9,6 +9,7 @@ import Grid from "@mui/material/Grid/Grid";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { MouseScroll } from "../components/MouseScoll";
 import Card from "@mui/material/Card";
+import {FooterScreen} from "./Footer.screen";
 
 interface WhatWeDoProps {}
 
@@ -589,6 +590,8 @@ export const WhatWeDoScreen: React.FunctionComponent<WhatWeDoProps> = () => {
           </Grid>
         </Grid>
       </Grid>
+        <div style={{ marginBottom: "10px" }}></div>
+        <FooterScreen/>
     </div>
   );
 };

@@ -18,6 +18,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import {ContainerDiv, ContainerDivVertical,Text, LogoSideBar, Wrapper, Logo, NavbarButton} from "../utils/styles";
 import {Colors} from "../utils/Colors";
+import {FooterScreen} from "./Footer.screen";
 
 interface ScientificValidProps {}
 export const ScientificValidScreen: React.FunctionComponent<ScientificValidProps> = () => {
@@ -250,8 +251,8 @@ export const ScientificValidScreen: React.FunctionComponent<ScientificValidProps
                     </CardContent>
                 </Card>
             </div>
-
-            <div style={{ margin: "20px" }}></div>
+            <div style={{ marginBottom: "10px" }}></div>
+            <FooterScreen/>
         </div>
 
     );

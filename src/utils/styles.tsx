@@ -1,5 +1,6 @@
 /**container*/
 import styled from "styled-components";
+import { Colors } from "../utils/Colors";
 /**Components*/
 import{NavBarText as NavText} from "../components/NavBarText";
 import{ItemWrapper as NavItemWrapper} from "../components/ItemWrapper";
@@ -76,10 +77,10 @@ export const LogoSideBar = styled.img`
 /**navbar button*/
 export const NavbarButton = styled(NavButtonItem)`
   /* Adapt the colors based on primary prop */
-  background-color: ${(props) => props.primary ? "white" : "#FFB673"};
+  background-color: ${(props) => props.primary ? Colors.light.main : "#FFB673"};
   font-size: 1em;
   margin: 2px;
   padding: 1px;
-  border: 2px solid #FFB673;
+  border: ${(props) => props.border ? props.border : "2px solid #FFB673"};
   border-radius: 3px;
 `;

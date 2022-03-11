@@ -3,6 +3,7 @@ import "../App.css";
 /**navbar and sidebar*/
 import {NavbarScreen} from "./Navbar.screen";
 import {SidebarScreen} from "./Sidebar.screen";
+import {FooterScreen} from "./Footer.screen";
 import { useTranslation } from "react-i18next";
 import { Container } from "../components/Container";
 import { VideoBg } from "../components/Video";
@@ -350,6 +351,8 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
         </Grid>
         <Grid item xs={3}></Grid>
       </Grid>
+        <div style={{ marginBottom: "10px" }}></div>
+        <FooterScreen/>
     </div>
   );
 };

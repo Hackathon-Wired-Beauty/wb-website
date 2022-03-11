@@ -6,6 +6,7 @@ interface Props{
     height?: string;
     maxWidth?: string;
     primary?: string;
+    border?: string;
     margin?: string;
 }
 

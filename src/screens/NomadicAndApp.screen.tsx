@@ -7,6 +7,7 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import {NavbarScreen} from "./Navbar.screen";
 import {SidebarScreen} from "./Sidebar.screen";
+import {FooterScreen} from "./Footer.screen";
 
 interface NomadicAndAppProps {}
 
@@ -404,6 +405,8 @@ export const NomadicAndAppScreen: React.FunctionComponent<
         </Grid>
       </Grid>
       {/*  END OUR INSANELY FAST ALGORITHM */}
+        <div style={{ marginBottom: "10px" }}></div>
+        <FooterScreen/>
     </div>
   );
 };

@@ -11,6 +11,7 @@ import CurrencyExchangeRoundedIcon from "@mui/icons-material/CurrencyExchangeRou
 import AutoGraphRoundedIcon from "@mui/icons-material/AutoGraphRounded";
 import BiotechRoundedIcon from "@mui/icons-material/BiotechRounded";
 import { borderRadius } from "@mui/system";
+import {FooterScreen} from "./Footer.screen";
 
 interface WhoAreWeProps {}
 
@@ -1761,6 +1762,8 @@ export const WhoAreWeScreen: React.FunctionComponent<WhoAreWeProps> = () => {
         </Grid>
       </Grid>
       {/* END RECRUTING */}
+        <div style={{ marginBottom: "10px" }}></div>
+        <FooterScreen/>
     </div>
   );
 };
