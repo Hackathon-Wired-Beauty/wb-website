@@ -51,7 +51,7 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
           autoPlay
           loop
           muted
-          src={require("../assets/videos/background-demo.webm")}
+          src={require("../assets/videos/background_30.webm")}
         />
         <ScreenFilter />
         <Text
@@ -125,7 +125,7 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
           backgroundColor: Colors.dark.background,
           height: "350px",
           display: "flex",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <div style={{ marginTop: "25px" }}></div>
@@ -236,11 +236,8 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
         }}
       >
         <Grid item xs={3}></Grid>
-        <Grid 
-          item xs={6}
-        >
-          <Grid
-          >
+        <Grid item xs={6}>
+          <Grid>
             <Text
               color={Colors.light.texts}
               weigth={"900"}
@@ -249,15 +246,21 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
               component={"h2"}
               size="40px"
             >
-              <span style={{ 
-                marginTop: "10px", wordWrap: "break-word",
-                backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
-                backgroundSize: "17.5rem 1rem, 100% 0.1rem",
-                backgroundRepeat: "no-repeat",
-                backgroundPositionY: "90%",
-              }}>Contact us</span>
+              <span
+                style={{
+                  marginTop: "10px",
+                  wordWrap: "break-word",
+                  backgroundImage:
+                    "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+                  backgroundSize: "17.5rem 1rem, 100% 0.1rem",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPositionY: "90%",
+                }}
+              >
+                Contact us
+              </span>
             </Text>
-            </Grid>
+          </Grid>
           <div style={{ marginBottom: "25px" }}></div>
           <Grid container>
             <Grid item xs={5}>
@@ -337,7 +340,9 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
                   align="center"
                   component={"h2"}
                   size="18px"
-                >Send message</Text>
+                >
+                  Send message
+                </Text>
               </Button>
             </Grid>
             <Grid item xs={4}></Grid>
