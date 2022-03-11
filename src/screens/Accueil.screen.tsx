@@ -1,9 +1,9 @@
 import * as React from "react";
 import "../App.css";
 /**navbar and sidebar*/
-import {NavbarScreen} from "./Navbar.screen";
-import {SidebarScreen} from "./Sidebar.screen";
-import {FooterScreen} from "./Footer.screen";
+import { NavbarScreen } from "./Navbar.screen";
+import { SidebarScreen } from "./Sidebar.screen";
+import { FooterScreen } from "./Footer.screen";
 import { useTranslation } from "react-i18next";
 import { Container } from "../components/Container";
 import { VideoBg } from "../components/Video";
@@ -36,13 +36,11 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
 
   React.useEffect(() => {}, []);
   return (
-
-
     <div>
-        <div>
-          <NavbarScreen/>
-          <SidebarScreen/>
-        </div>
+      <div>
+        <NavbarScreen />
+        <SidebarScreen />
+      </div>
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
@@ -248,6 +246,7 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
               size="40px"
             >
               <span
+                id="contact-us"
                 style={{
                   marginTop: "10px",
                   wordWrap: "break-word",
@@ -351,8 +350,8 @@ export const AccueilScreen: React.FunctionComponent<AccueilProps> = () => {
         </Grid>
         <Grid item xs={3}></Grid>
       </Grid>
-        <div style={{ marginBottom: "10px" }}></div>
-        <FooterScreen/>
+      <div style={{ marginBottom: "10px" }}></div>
+      <FooterScreen />
     </div>
   );
 };
