@@ -142,6 +142,11 @@ export const AdminScreen: React.FunctionComponent<AdminProps> = () => {
     })();
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setRedirectTo("/login");
+  };
+
   React.useEffect(() => {
     const user = getUser();
     if (user === null) {
@@ -182,6 +187,38 @@ export const AdminScreen: React.FunctionComponent<AdminProps> = () => {
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
       />
+      <Grid
+        container
+        justifyContent={"center"}
+        alignItems={"center"}
+        direction="row"
+        style={{
+          backgroundColor: Colors.light.main,
+          padding: "1rem",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 3,
+        }}
+      >
+        <Grid item xs={6}>
+          <Text
+            size="30px"
+            color={Colors.dark.texts}
+            component="p"
+            data-aos="fade-up"
+            weigth="300"
+            align="center"
+          >
+            Hello <b>{getUser()?.firstname}</b> !
+          </Text>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth onClick={() => handleLogout()}>
+            Logout
+          </Button>
+        </Grid>
+      </Grid>
       <div
         style={{
           height: "100vh",
@@ -189,6 +226,7 @@ export const AdminScreen: React.FunctionComponent<AdminProps> = () => {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: Colors.light.background,
+          marginTop: "75px",
         }}
       >
         <div
