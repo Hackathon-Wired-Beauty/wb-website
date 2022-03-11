@@ -91,7 +91,13 @@ export const WhoAreWeScreen: React.FunctionComponent<WhoAreWeProps> = () => {
           uppercase
           align="center"
         >
-          Our history
+          
+          <span style={{ 
+            backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+            backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+            backgroundRepeat: "no-repeat",
+            backgroundPositionY: "90%",
+          }}>Our history</span>
         </Text>
         <div style={{ margin: "30px" }}></div>
         <Text
@@ -1149,7 +1155,13 @@ export const WhoAreWeScreen: React.FunctionComponent<WhoAreWeProps> = () => {
           uppercase
           align="center"
         >
-          VALUES AND SPIRIT
+          
+          <span style={{ 
+            backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+            backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+            backgroundRepeat: "no-repeat",
+            backgroundPositionY: "90%",
+          }}>VALUES AND SPIRIT</span>
         </Text>
         <Text
           size="18px"
@@ -1484,7 +1496,13 @@ export const WhoAreWeScreen: React.FunctionComponent<WhoAreWeProps> = () => {
           align="center"
           uppercase
         >
-          INVESTORS AND BOARDS
+          
+          <span style={{ 
+            backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+            backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+            backgroundRepeat: "no-repeat",
+            backgroundPositionY: "90%",
+          }}>INVESTORS AND BOARDS</span>
         </Text>
         <div style={{ margin: "15px" }}></div>
         <div
@@ -1627,7 +1645,13 @@ export const WhoAreWeScreen: React.FunctionComponent<WhoAreWeProps> = () => {
           align="center"
           uppercase
         >
-          We're recruting
+          
+          <span style={{ 
+            backgroundImage: "linear-gradient(90deg, rgb(254, 125, 5), rgb(254, 125, 5))",
+            backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+            backgroundRepeat: "no-repeat",
+            backgroundPositionY: "90%",
+          }}>We're recruting</span>
         </Text>
         <div style={{ margin: "10px" }}></div>
         <Text

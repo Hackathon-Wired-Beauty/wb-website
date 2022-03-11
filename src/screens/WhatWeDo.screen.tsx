@@ -84,7 +84,12 @@ export const WhatWeDoScreen: React.FunctionComponent<WhatWeDoProps> = () => {
           uppercase
           align="center"
         >
-          {"BeautyTech ✖ Skincare"}
+          <span style={{ 
+            backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+            backgroundSize: "35.5rem 0.5rem, 100% 0.1rem",
+            backgroundRepeat: "no-repeat",
+            backgroundPositionY: "90%",
+          }}>{"BeautyTech ✖ Skincare"}</span>
         </Text>
         <Text
           size="18px"
@@ -383,7 +388,14 @@ export const WhatWeDoScreen: React.FunctionComponent<WhatWeDoProps> = () => {
           uppercase
           align="center"
         >
-          WE WORK FOR LABS AND MARKETING TEAMS
+          
+          <span style={{ 
+            backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+            backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+            backgroundRepeat: "no-repeat",
+            backgroundPositionY: "90%",
+          }}>WE WORK FOR LABS AND MARKETING TEAMS</span>
+          
         </Text>
         <div style={{ margin: "15px" }}></div>
         <Grid
@@ -493,7 +505,13 @@ export const WhatWeDoScreen: React.FunctionComponent<WhatWeDoProps> = () => {
               uppercase
               align="center"
             >
-              WE HELP
+              
+            <span style={{ 
+              backgroundImage: "linear-gradient(90deg, rgb(254, 125, 5), rgb(254, 125, 5))",
+              backgroundSize: "35.5rem 0.5rem, 100% 0.1rem",
+              backgroundRepeat: "no-repeat",
+              backgroundPositionY: "90%",
+            }}>WE HELP</span>
             </Text>
             <div style={{ margin: "25px" }}></div>
             <Grid container direction={"row"} spacing={3}>

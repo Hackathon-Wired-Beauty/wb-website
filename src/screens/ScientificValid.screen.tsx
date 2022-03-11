@@ -127,7 +127,13 @@ export const ScientificValidScreen: React.FunctionComponent<ScientificValidProps
                             align="center"
                             uppercase
                         >
-                            Some of Wired Beauty PAPERS
+                            
+                            <span style={{ 
+                                backgroundImage: "linear-gradient(90deg, rgb(254, 125, 5), rgb(254, 125, 5))",
+                                backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+                                backgroundRepeat: "no-repeat",
+                                backgroundPositionY: "90%",
+                            }}>Some of Wired Beauty PAPERS</span>
                         </TextComponent>
                         <TextComponent
                             size="15px"

@@ -296,7 +296,13 @@ export const NomadicAndAppScreen: React.FunctionComponent<
               align="center"
               uppercase
             >
-              SMART DATA ✖ SKINCARE
+              
+              <span style={{ 
+                backgroundImage: "linear-gradient(90deg, rgb(254, 125, 5), rgb(254, 125, 5))",
+                backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+                backgroundRepeat: "no-repeat",
+                backgroundPositionY: "90%",
+              }}>SMART DATA ✖ SKINCARE</span>
             </Text>
             <Text
               size="15px"
@@ -361,7 +367,13 @@ export const NomadicAndAppScreen: React.FunctionComponent<
               align="center"
               uppercase
             >
-              OUR INSANELY FAST ALGORITHM
+              
+              <span style={{ 
+                backgroundImage: "linear-gradient(90deg, rgb(255, 184, 117), rgb(255, 184, 117))",
+                backgroundSize: "60.5rem 0.5rem, 100% 0.1rem",
+                backgroundRepeat: "no-repeat",
+                backgroundPositionY: "90%",
+              }}>OUR INSANELY FAST ALGORITHM</span>
             </Text>
             <Text
               size="15px"
