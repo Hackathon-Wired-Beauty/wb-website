@@ -13,6 +13,7 @@ import { WhoAreWeScreen } from "./screens/WhoAreWe";
 import { LoginScreen } from "./screens/Login.screen";
 import { AdminScreen } from "./screens/Admin.screen";
 import { RenderScreen } from "./screens/Render.screen";
+import { DashboardScreen } from "./screens/Dashboard.screen";
 AOS.init();
 ReactDOM.render(
   <React.StrictMode>
@@ -27,6 +28,7 @@ ReactDOM.render(
         />
         <Route path={"/login"} element={<LoginScreen />} />
         <Route path={"/admin"} element={<AdminScreen />} />
+        <Route path={"/dashboard"} element={<DashboardScreen />} />
         <Route path={"/render"} element={<RenderScreen />} />
       </Routes>
     </BrowserRouter>

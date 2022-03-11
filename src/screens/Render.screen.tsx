@@ -29,7 +29,7 @@ import { BarChart, Bar, Cell, Legend } from "recharts";
 
 interface RenderProps {}
 
-interface ReportData {
+export interface ReportData {
   companyName: string;
   client: UsersResponse;
   data: CSVInterface[];

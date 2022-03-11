@@ -78,6 +78,13 @@ export const AdminScreen: React.FunctionComponent<AdminProps> = () => {
       if (registerRes.hasOwnProperty("title")) {
         const error: ErrorLoginResponse = registerRes;
         setError(error.message);
+      } else {
+        setSnackBar({
+          open: true,
+          message:
+            "The user has been created successfully! You can now give the credentials to the client",
+          type: "success",
+        });
       }
 
       console.log(registerRes);
