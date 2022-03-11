@@ -17,6 +17,7 @@ import MultilineChartIcon from '@mui/icons-material/MultilineChart';
 import CompareIcon from '@mui/icons-material/Compare';
 import {NavbarScreen} from "./Navbar.screen";
 import {SidebarScreen} from "./Sidebar.screen";
+import {FooterScreen} from "./Footer.screen";
 
 interface RangeOfServiceProps {}
 
@@ -759,6 +760,8 @@ export const RangeOfServiceScreen: React.FunctionComponent<RangeOfServiceProps> 
           </CardContent>
         </Card>
       </Grid>
+        <div style={{ marginBottom: "10px" }}></div>
+        <FooterScreen/>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 /*import { BrowserRouter as Router, Link } from "react-router-dom";**/
 import StyledLink from "../components/StyledLink";
 /**styles and components*/
+import { Colors } from "../utils/Colors";
 import {ContainerDiv, ContainerDivVertical,Text, LogoSideBar, Wrapper, Logo, NavbarButton} from "../utils/styles";
 import logo from "../assets/images/Logo_Wired_BeautyFULL_BLACK.png";
 /**routes*/
@@ -63,13 +64,13 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
 
                 <Wrapper flexDirection="column" alignItems="center">
                         <StyledLink to={"/"}>
-                            <NavbarButton>
-                                <Text color={"black"}>{t("Sign In")}</Text>
+                            <NavbarButton primary={Colors.light.main} border={Colors.light.main}>
+                                <Text color={Colors.light.texts}>{t("Log In")}</Text>
                             </NavbarButton>
                         </StyledLink>
-                        <StyledLink to={"/"}>
-                            <NavbarButton >
-                                <Text color={"black"}>{t("Being Panaliste")}</Text>
+                        <StyledLink to={"/#Firstname"}>
+                            <NavbarButton primary={Colors.light.main} border={Colors.light.main}>
+                                <Text color={Colors.light.texts}>{t("Being Panaliste")}</Text>
                             </NavbarButton>
                         </StyledLink>
                 </Wrapper>
@@ -77,8 +78,3 @@ export const NavbarScreen:React.FC = (NavbarProps) => {
         </div>
     )
 };
-
-/**lint test*/
-function accueil() {
-    return <h2>About</h2>;
-}

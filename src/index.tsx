@@ -12,6 +12,8 @@ import { WhatWeDoScreen } from "./screens/WhatWeDo.screen";
 import { NomadicAndAppScreen } from "./screens/NomadicAndApp.screen";
 import { WhoAreWeScreen } from "./screens/WhoAreWe";
 import { RangeOfServiceScreen } from "./screens/RangeOfService.screen";
+import { FooterScreen} from "./screens/Footer.screen";
+
 AOS.init();
 ReactDOM.render(
   <React.StrictMode>
@@ -25,6 +27,7 @@ ReactDOM.render(
         <Route path={"/nomadic-labgrade-device-and-app"} element={<NomadicAndAppScreen />} />
         <Route path={"/test"} element={<TestScreen />} />
         <Route path={"/scientific-validation"} element={<ScientificValidScreen />} />
+        <Route path={"/footer"} element={<FooterScreen />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
